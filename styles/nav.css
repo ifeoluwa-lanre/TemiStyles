@@ -1,0 +1,152 @@
+i{
+    color: white ;
+}
+
+.navigation-wrapper{
+    height: 190px;
+    background-image: url(../images/hairstyles/IMG_5196.jpg);
+    background-size: 400px;
+    /* background-color:  #04052b; */
+    color: palepink;
+    /* Flexbox container */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 100px; 
+}
+
+/* lweft column styles */
+.navigation-wrapper > .left-column{
+    display: flex;
+    align-items: center;
+}
+
+
+.navigation-wrapper > .left-column > .icon{
+    margin-right: 15px;
+}
+
+/* here we use the icon class to get all the tags i */
+.navigation-wrapper > .left-column > .icon i{
+    /* em and rem are like percentages for example using 2em 
+    would display double the normal size */
+
+    font-size: 2em;
+} 
+
+/* the greater than symbol, tells css to find the left column, and
+then from the left column find the child of the class contact-hours-wrapper
+*/
+.navigation-wrapper > .left-column > .contact-hours-wrapper{
+    /* grid is similar to flexbox, but instead of saying flex we say grid,
+     for the display type*/
+    display: grid;
+    /* here we are saying that grid works on a grid type system
+    "1fr" stands for one fractional unit, it is the same as saying 
+    take up all the space available*/
+    grid-template-columns: 1fr;  
+    color: white;
+    grid-gap: 10px;
+}
+.navigation-wrapper > .left-column > .contact-hours-wrapper > .time {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: #858585;
+    font-size: 0.8em;
+}
+
+.links-wrapper > .nav-link a{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: white;
+}
+
+/* center-column styles */
+.navigation-wrapper > .center-column {
+    display: grid;
+    grid-template-columns: ifr;
+    grid-gap: 42px;
+    width: 500px;
+}
+
+/* this inheritance is used to  set the image to the center */
+.navigation-wrapper > .center-column > .banner-image{
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-wrapper > .center-column > .banner-image img{
+    width: 216px;
+    height: 100%;
+}
+
+/* this css design is used to set the nav links in the right position */
+.links-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links-wrapper > .nav-link{
+    width: 70px;
+    text-align: center;
+}
+
+/* this css block is creates an animation for the nav links. it removes 
+the underline from the links, gives the links a custom font and color, and it also
+gives the website a time to get to the pages of the links if clicked*/
+.links-wrapper > .nav-link a{
+    font-family: 'Dancing Script', cursive;
+    color:aliceblue;
+    text-decoration: none;
+    transition: 0.5s;
+}
+/* hover here is a psuedo selector meaning that we are not clicking on the links 
+but if a hover movement should take place, give it whatever parameter is passed in here*/
+.links-wrapper > .nav-link a:hover{
+    color: #cea135;
+    letter-spacing: 2px;
+}
+
+/* right column styles */
+.navigation-wrapper > .right-column{
+    display: flex;
+    align-items: center;
+}
+
+.navigation-wrapper > .right-column > .address-wrapper{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: white;
+    text-align: right;
+}
+
+.navigation-wrapper > .right-column > .address-wrapper a{
+    color: #858585;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: 0.5s;
+}
+
+.navigation-wrapper > .right-column > .address-wrapper a:hover{
+    color: #cea135;
+}
+
+.navigation-wrapper > .right-column > .contact-icon{
+    margin-left: 15px;
+    font-size: 2em;
+}
+
+.navigation-wrapper > .right-column > .contact-icon a{
+    color: #cbcbcb;
+    transition: 0.5s;
+}
+
+.navigation-wrapper > .right-column > .contact-icon a i:hover {
+    color: #cea135;
+}
+
+.features-section > .colums-wrapper > .column i{
+    color: whitesmoke;
+}
+
+.features-section > .colums-wrapper > .column p{
+    color: whitesmoke;
+}

@@ -1,0 +1,90 @@
+/* hero section style */
+.hero-section{
+    background-image: url(../images/background/Download\ Rose\ gold\ glitter\ background\ \ for\ free.jfif);
+    padding: 100px;
+    height: 300px;
+    /* backgrpund attachment makes the imprted image fix */
+    background-attachment:fixed;
+    /* background position makes the image to be at the centre*/
+    background-position:center;
+    /* background repeat this makes the photo be showed only once */
+    background-repeat: no-repeat;
+    /* background size cover  take the image and shrinks it so that 
+    image can fit in the space*/
+    background-size:cover;
+}
+
+.hero-section > .top-heading{
+    padding: 0.1px 10px;
+    text-align: center;
+    background-color: #11122b;
+    color: #cbcbcb;
+    width: 200px;
+    border-radius: 2px;
+    font-family: 'Dancing Script', cursive;
+}
+.top-heading h1{
+    font-family: 'Dancing Script', cursive;
+}
+
+.hero-section > .bottom-heading{
+    background-color: #03042b;
+    color:#11122b;
+    padding: 1px 10px;
+    margin-top: 15px;
+    width: 107px;
+    border-radius: 2px;
+}
+
+
+
+/* features section style */
+.features-section{
+    height: 400px;
+    background-image: url(../images/background/MuchaTseBle.jfif);
+    background-color: darkblue;
+    /* border-top: 10px solid white; */
+    color: #11122b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    /* we use this line of code to make a box shadow at the end of the page to see what
+    kind of box shadow we want, we can look for a box shadow generator and practice before implementing.*/
+    box-shadow: inset 0px -26px 79px -8px rgba(0, 0, 0, 0.58)
+}
+
+.features-section > .colums-wrapper {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-section > .colums-wrapper >.column{
+    padding: 20px;
+    margin: 42px;
+    text-align: center;
+    border-bottom: 5px solid transparent; 
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.features-section > .colums-wrapper > .column:hover{
+    border-bottom: 5px solid whitesmoke;
+}
+
+.features-section > .colums-wrapper > .column :nth-child(1){
+    font-size: 1.5em;
+}
+
+.features-section > .colums-wrapper > .column :nth-child(2){
+    font-size: 1.5em;
+    font-weight: 100;
+    height: 50px;
+    transition: 1s;
+}
+
+.features-section > .colums-wrapper > .column :nth-child(3){
+    letter-spacing: 2px;
+}
+

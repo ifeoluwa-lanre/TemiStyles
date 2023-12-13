@@ -1,0 +1,79 @@
+ /* a style is a css feature that gives different attributes to html code. for example setting the style to color
+    gives the line of code a specific color */
+/* Common nav styles */
+
+/* margin in css
+        margin is used to clear the white space area around 
+        the top corner of the body*/
+
+
+/* Common styles */
+
+body{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto Slab', serif;
+}
+
+/* page container styles */
+.page-container{
+    display: flex;
+    justify-content: center;
+}
+
+.page-container > .content-wrapper{
+    width: 1000px;
+}
+
+/* here we use the # symbol to get the id given to the image */
+.page-container > .content-wrapper img{
+    width: 350px;
+    margin: 18px 40px 30px 0px;
+    float: left;
+    border: 1px solid white;
+} 
+
+.page-container > .content-wrapper p{
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+/* Square grid styles */
+.square-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.square-wrapper > .squares{
+    width: 1000px;
+}
+
+.square-wrapper > .squares > .square{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+
+.square > .img-wrapper img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.square > .square-text-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 42px;
+}
+
+.square > .square-text-wrapper h1{
+    color: brown;
+}
+
+
+
+

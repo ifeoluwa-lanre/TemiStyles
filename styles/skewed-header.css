@@ -1,0 +1,50 @@
+/* header about us */
+.skewed-header{
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.skewed-header > .header-background{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* the transform skew is used to give the image something 
+    similar to like a diagonal cut*/
+    transform: skewY(-7deg);
+    transform-origin: top left;
+    filter: brightness(50%);
+}
+
+.skewed-header > .skewed-header-wrapper{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    /* vw specifies the width of the content area, padding area or border
+    area(depenging on box-sizing) of certain boxes*/
+    width: 100vw;
+}
+
+.skewed-header > .skewed-header-wrapper > .skewed-header-content{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skewed-header > .skewed-header-wrapper > .skewed-header-content > .heading-wrapper{
+    background-color:antiquewhite;
+    /* background-color: #cea135; */
+    color:#11122b;
+    border-bottom-left-radius:2px;
+    border-bottom-right-radius: 0px;
+    width: 160px;
+    padding: 0px;
+    text-align: center;
+}
